@@ -16,11 +16,11 @@ header {
 }
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   gap: 2rem;
 }
 nav a {
-  color: #eee;
+  color: hsl(315, 50%, 76%);
   text-decoration: none;
   font-weight: 600;
   text-transform: uppercase;
@@ -74,7 +74,7 @@ h1, h2, h3 {
   background: #252525;
   border-radius: 8px;
   padding: 1rem;
-  box-shadow: 0 4px 8px rgba(233,69,96,0.4);
+  box-shadow: 0 4px 8px #dc0ca1;
   transition: transform 0.3s;
 }
 .game-card:hover {
@@ -97,7 +97,7 @@ h1, h2, h3 {
   text-align: center;
 }
 #interactive button {
-  background-color: #e94560;
+  background-color:#dc0ca1;
   border: none;
   border-radius: 6px;
   color: white;
