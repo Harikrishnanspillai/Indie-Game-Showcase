@@ -107,7 +107,7 @@ h1, h2, h3 {
   transition: background-color 0.3s;
 }
 #interactive button:hover {
-  background-color: #b83248;
+  background-color: #a2188b;
 }
 #interactive .result {
   margin-top: 1rem;
@@ -135,7 +135,7 @@ h1, h2, h3 {
   resize: vertical;
 }
 #contact button {
-  background-color: #e94560;
+  background-color:#dc0ca1;
   border: none;
   color: white;
   padding: 0.8rem;
@@ -145,7 +145,7 @@ h1, h2, h3 {
   transition: background-color 0.3s;
 }
 #contact button:hover {
-  background-color: #b83248;
+  background-color: #a2188b;
 }
 /* Events section */
 #events ul {
