@@ -2,31 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Indie Game Showcase - Home</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indie Game Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
+    <div class="logo">🎮 Indie Showcase</div>
     <nav>
-      <a href="home.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="showcase.html">Game Showcase</a>
+      <a href="home.html">Home</a>
+      <a href="abt.html">About</a>
+      <a href="games.html">Games</a>
       <a href="interactive.html">Interactive</a>
-      <a href="contact.html">Contact</a>
-      <a href="events.html">Events</a>
+      <a href="Contact.html">Contact</a>
     </nav>
   </header>
-  <main>
-    <section id="home">
-      <h1>Welcome to Indie Game Showcase</h1>
-      <p>Discover the most exciting indie games from passionate creators around the world.</p>
-    </section>
-  </main>
+
+  <section class="hero">
+   <video autoplay muted loop playsinline>
+  <source src="video.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Explore Unique Indie Games</h1>
+      <p>Discover, play, and support creative developers from around the world with our curated indie gaming platform.</p>
+      <a href="games.html" class="cta-button">Browse Games</a>
+    </div>
+  </section>
+
   <footer>
-    &copy; 2024 Indie Game Showcase. All rights reserved.
+    <p>&copy; 2025 Indie Game Showcase. All rights reserved.</p>
   </footer>
-  <script src="javascript.js"></script>
 </body>
 </html>
-
