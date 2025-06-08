@@ -160,3 +160,16 @@ footer {
   background: #1f1f1f;
   color: #777;
 }
+#updates {
+    padding: 2rem;
+    font-family: sans-serif;
+}
+  .timeline {
+    list-style: none;
+    padding: 0;
+}
+  .timeline li {
+    margin: 1rem 0;
+    border-left: 3px solid #ffcc00;
+    padding-left: 1rem;
+}
