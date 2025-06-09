@@ -2,46 +2,305 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Indie Game Showcase - Game Showcase</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indie Game Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
+    <div class="logo">🎮 Indie Showcase</div>
     <nav>
-      <a href="home.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="showcase.html" class="active">Game Showcase</a>
+      <a href="showcase.html">Games</a>
       <a href="interactive.html">Interactive</a>
-      <a href="contact.html">Contact</a>
-      <a href="events.html">Events</a>
+      <a href="Contact.html">Contact</a>
     </nav>
   </header>
-  <main>
-    <section id="showcase">
-      <h2>Game Showcase</h2>
-      <div class="game-grid">
-        <div class="game-card">
-          <img src="https://via.placeholder.com/300x180.png?text=Game+1" alt="Pixel Quests" />
-          <h3>Pixel Quests</h3>
-          <p>An epic pixel art adventure through magical lands and mysterious dungeons.</p>
-        </div>
-        <div class="game-card">
-          <img src="https://via.placeholder.com/300x180.png?text=Game+2" alt="Cyber Drift" />
-          <h3>Cyber Drift</h3>
-          <p>A neon-lit cyberpunk racing game that blends speed and strategy.</p>
-        </div>
-        <div class="game-card">
-          <img src="https://via.placeholder.com/300x180.png?text=Game+3" alt="Forest Whispers" />
-          <h3>Forest Whispers</h3>
-          <p>A calming exploration game set in a mystical forest filled with secrets.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    &copy; 2024 Indie Game Showcase. All rights reserved.
-  </footer>
-  <script src="javascript.js"></script>
-</body>
-</html>
+
+<!-- Game showcase (thumbnails with working links) -->
+<section class="game-showcase">
+  <h1>🎮 Game Library</h1>
+  <div class="genre-buttons">
+    <button onclick="filterGames('all')">All</button>
+    <button onclick="filterGames('action')">Action</button>
+    <button onclick="filterGames('scifi')">Sci-Fi</button>
+    <button onclick="filterGames('puzzle')">Puzzle</button>
+    <button onclick="filterGames('strategy')">Strategy</button>
+    <button onclick="filterGames('racing')">Racing</button>
+    <button onclick="filterGames('card')">Card Battle</button>
+    <button onclick="filterGames('sports')">Sports</button>
+
+  </div>
+
+  <div class="game-grid" id="game-grid">
+
+    <!-- Game 1 -->
+    <div class="game-card racing">
+      <img src="polytrack.jpeg" alt="PolyTrack">
+      <h3>POLY TRACK</h3>
+      <p>Speed past rivals, own the road!</p>
+      <a href="https://kodub.itch.io/polytrack" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 2 -->
+     <div class="game-card action">
+      <img src="ultrakil.png" alt="ultrakil">
+      <h3>ULTRAKILL PRELUDE</h3>
+      <p>Defend your village with strategy!</p>
+      <a href="https://hakita.itch.io/ultrakill-prelude" target="_blank">Visit here</a>
+    </div>
+
+    
+    <!-- Game 3 -->
+    <div class="game-card racing">
+      <img src="helpnobrake.jpeg" alt="helpnobrake">
+      <h3>HELP NO BRAKE</h3>
+      <p>Master the art of drifting!</p>
+      <a href="https://edgarmendoza.itch.io/help-no-brake" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 4 -->
+      <div class="game-card puzzle">
+      <img src="lt.gif" alt="lancertactics">
+      <h3>LANCER-TACTICS</h3>
+      <p>Match the cutest animals!</p>
+      <a href="https://wick.itch.io/lancer-tactics" target="_blank">Visit here</a>
+    </div>
+
+   
+
+    <!-- Game 5 -->
+    <div class="game-card racing">
+      <img src="2089.png" alt="Vecktor2089">
+      <h3>VECKTOR 2089</h3>
+      <p>Chrome's classic endless runner.</p>
+      <a href="https://impbox.itch.io/vektor2089" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 6 -->
+    <div class="game-card racing">
+      <img src="driversyndicate.jpg" alt="Thedriversyndicate">
+      <h3>THE DRIVER SYNDICATE</h3>
+      <p>Brutal ragdoll physics fun.</p>
+      <a href="https://soapyman.itch.io/driversyndicate" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 7 -->
+    <div class="game-card action">
+      <img src="bloodmall.jpeg" alt="blood-mall">
+      <h3>BLOOD MALL</h3>
+      <p>Blast through colorful stacks!</p>
+      <a href="https://olliehall.itch.io/blood-mall" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 8 -->
+      <div class="game-card racing">
+      <img src="shakedown.jpg" alt="shakedown Rally">
+      <h3>SHAKEDOWN RALLY</h3>
+      <p>Jump, dash, and survive the rhythm!</p>
+      <a href="https://nothke.itch.io/shakedown" target="_blank">Visit here</a>
+    </div>
+    
+    <!-- Game 9 -->
+    <div class="game-card strategy">
+      <img src="mind.gif" alt="mindustry">
+      <h3>MINDUSTRY</h3>
+      <p>Lead your army to domination.</p>
+      <a href="https://anuke.itch.io/mindustry" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 10 -->
+     <div class="game-card racing">
+      <img src="futuregrind.jpg" alt="futuregrind">
+      <h3>FUTURE GRID</h3>
+      <p>Open-world chaos inspired by GTA.</p>
+      <a href="http://milkbaggames.itch.io/futuregrind" target="_blank">Visit here</a>
+    </div>
+   
+
+    <!-- Game 11 -->
+    <div class="game-card puzzle">
+      <img src="aw.gif" alt="alternate-watch">
+      <h3>ALTERNATE WATCH</h3>
+      <p>Balance and solve tile puzzles!</p>
+      <a href="https://tesseron.itch.io/alternate-watch" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 12 -->
+    <div class="game-card action">
+      <img src="pacside.png" alt="Dragon Annihilation">
+      <h3>PAC-SIDE</h3>
+      <p>Defend your kingdom from dragons!</p>
+      <a href="https://danieloschepkov.itch.io/pac-side" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 13 -->
+    <div class="game-card puzzle">
+      <img src="goodjob.png" alt="goodjob">
+      <h3>GOOD JOB!</h3>
+      <p>Match and pop tasty fruits!</p>
+      <a href="https://kathinkapng.itch.io/good-job" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 14 -->
+    <div class="game-card strategy">
+      <img src="thehive.jpeg" alt="Ludo With Friends">
+      <h3>THE HIVE</h3>
+      <p>Classic board fun online!</p>
+      <a href="https://skydome.itch.io/thehive" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 15 -->
+    <div class="game-card racing">
+      <img src="photonhighway.jpeg" alt="Photon Highway">
+      <h3>PHOTON HIGHWAY</h3>
+      <p>Speed through chaotic tracks!</p>
+      <a href="https://sirnic.itch.io/photonhighway" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 16 -->
+    <div class="game-card action">
+      <img src="red.png" alt="red-handed">
+      <h3>RED-HANDED</h3>
+      <p>Combine blocks to score high!</p>
+      <a href="https://badpiggy.itch.io/red-handed" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 17 -->
+    <div class="game-card action">
+      <img src="white.jpg" alt="Blazing Blades">
+      <h3>WHITE KNUCKLE</h3>
+      <p>Slash enemies with fierce power!</p>
+      <a href="https://futilrevenge.itch.io/white-knuckle" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 18 -->
+    <div class="game-card sports">
+      <img src="sp.gif" alt="soccerphy">
+      <h3>SOCCER PHYSICS</h3>
+      <p>Show off your billiard skills!</p>
+      <a href="https://ottoojala.itch.io/soccer-physics" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 19 -->
+    <div class="game-card card">
+      <img src="dg.gif" alt="DUNGEONS">
+      <h3>DUNGEONS AND DEGENERATE GAMBLERS</h3>
+      <p>Card game fun with UNO vibes!</p>
+      <a href="https://purplemosscollectors.itch.io/dndg" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 20 -->
+    <div class="game-card sports">
+      <img src="sb.gif" alt="skatebird">
+      <h3>SKATE BIRD</h3>
+      <p>Draw lines to guide the ball!</p>
+      <a href="https://glassbottommeg.itch.io/skatebird" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 21 -->
+    <div class="game-card card">
+      <img src="stakes.jpeg" alt="Temple Run 2">
+      <h3>HIGH STAKES</h3>
+      <p>Run endlessly from danger!</p>
+      <a href="https://krystman.itch.io/high-stakes" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 22 -->
+    <div class="game-card action">
+      <img src="pl.gif" alt="projectlandsword">
+      <h3>PROJECT LANDSWORD</h3>
+      <p>Work together through puzzles!</p>
+      <a href="https://mezzaninesoftware.itch.io/landsword" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 23 -->
+    <div class="game-card puzzle">
+      <img src="found.jpeg" alt="foundit">
+      <h3>FOUND IT</h3>
+      <p>Slide tiles to reach 2048!</p>
+      <a href="https://sad-pea-games.itch.io/foundit" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 24 -->
+    <div class="game-card scifi">
+      <img src="fractal.gif" alt="fractal-sailor">
+      <h3>FRACTAL SAILOR</h3>
+      <p>Run and rotate in space tunnels!</p>
+      <a href="https://propagant.itch.io/fractal-sailor" target="_blank">Visit here</a>
+    </div>
+
+    <!-- Game 25 -->
+    <div class="game-card strategy">
+      <img src="holderofplace.gif" alt="holder-of-place">
+      <h3>HOLDER OF PLACE</h3>
+      <p>Control armies in a stickman world!</p>
+      <a href="https://zittacheng.itch.io/holder-of-place" target="_blank">Vist here</a>
+    </div>
+
+    <!--Game 26-->
+    <div class="game-card scifi">
+      <img src="xenospore.gif" alt="xenospore">
+      <h3>XENOSPORE</h3>
+      <p>Control armies in a stickman world!</p>
+      <a href="https://avivlevy.itch.io/xenospore" target="_blank">Vist here</a>
+    </div>
+
+    <div class="game-card scifi">
+      <img src="votv.png" alt="VOTV">
+      <h3>VOICES OF THE VOID</h3>
+      <p>Control armies in a stickman world!</p>
+      <a href="https://mrdrnose.itch.io/votv" target="_blank">Vist here</a>
+    </div>
+
+     <div class="game-card scifi">
+      <img src="tr.gif" alt="trigaea">
+      <h3>TRIGAEA</h3>
+      <p>Control armies in a stickman world!</p>
+      <a href="https://ryngm.itch.io/trigaea" target="_blank">Vist here</a>
+    </div>
+
+     <div class="game-card sports">
+      <img src="klifur.png" alt="klifur">
+      <h3>KLIFUR</h3>
+      <p>Control armies in a stickman world!</p>
+      <a href="https://torfi.itch.io/klifur" target="_blank">Vist here</a>
+    </div>
+
+     <div class="game-card sports">
+      <img src="tb.jpeg" alt="toasterball-demo">
+      <h3>TOASTERBALL</h3>
+      <p>Control armies in a stickman world!</p>
+      <a href="https://studiocrafteurs.itch.io/toasterball-demo" target="_blank">Vist here</a>
+    </div>
+
+     <div class="game-card card">
+      <img src="ss.gif" alt="shogunshowdown">
+      <h3>SHOGUN SHOWDOWN</h3>
+      <p>Control armies in a stickman world!</p>
+      <a href="https://roboatino.itch.io/shogunshowdown" target="_blank">Vist here</a>
+    </div>
+
+     <div class="game-card card">
+      <img src="ww.png" alt="waterworks">
+      <h3>WATER WORKS</h3>
+      <p>Control armies in a stickman world!</p>
+      <a href="https://scriptwelder.itch.io/waterworks" target="_blank">Vist here</a>
+    </div>
+
+    
+
+    <!-- All 25 games added -->
+  </div>
+</section>
+
+<script>
+  function filterGames(genre) {
+    const cards = document.querySelectorAll('.game-card');
+    cards.forEach(card => {
+      card.style.display = (genre === 'all' || card.classList.contains(genre)) ? 'block' : 'none';
+    });
+  }
+</script>
