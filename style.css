@@ -361,6 +361,21 @@ a:visited {
   margin-bottom: 20px;
   color: #00ffc8;
 }
+.events-section {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #1a0000;
+  border: 1px solid #b8860b;
+  border-radius: 10px;
+}
+
+.events-section h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #ff0000;
+  margin-bottom: 2rem;
+}
 #updates {
     padding: 2rem;
     font-family: sans-serif;
