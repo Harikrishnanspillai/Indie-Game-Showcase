@@ -392,4 +392,51 @@ a:visited {
     border-left: 3px solid #ffcc00;
     padding-left: 1rem;
 }
+.game-info-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #1a0000;
+  border: 2px solid gold;
+  border-radius: 16px;
+  text-align: center;
+  color: #f0e6d2;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.game-info-container h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: gold;
+}
+
+.game-info-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.instructions {
+  text-align: left;
+  margin: 0 auto 30px;
+  max-width: 600px;
+  list-style: none;
+  padding-left: 0;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #ff6666;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: gold;
+}
+
 
