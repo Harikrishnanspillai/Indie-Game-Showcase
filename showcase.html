@@ -40,7 +40,7 @@
       <img src="uno.jpg" alt="UNO">
       <h3>UNO</h3>
       <p>Card game fun with UNO vibes!</p>
-      <a href="https://unoonline.io/" target="_blank">Visit here</a>
+      <a href="instructions.html?title=UNO&link=https://unoonline.io/" target="_blank">Visit here</a>
     </div>
 
 <div class="game-card action">
@@ -411,4 +411,12 @@
       card.style.display = (genre === 'all' || card.classList.contains(genre)) ? 'block' : 'none';
     });
   }
+  const buttons = document.querySelectorAll('.genre-buttons button');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active')); // remove from all
+      btn.classList.add('active'); // add to clicked one
+    });
+  });
 </script>

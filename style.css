@@ -197,13 +197,22 @@ footer {
 }
 
 .team-member img {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #b8860b;
   margin-bottom: 1rem;
+  border-radius: 12px; 
+  border: 2px solid #b8860b;
+  box-shadow: 0 0 12px #b8860b, 0 0 20px rgba(255, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.team-member:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 0 16px #b8860b, 0 0 30px rgba(255, 0, 0, 0.6);
+}
+
 
 .team-member h3 {
   font-size: 1.2rem;
@@ -351,6 +360,13 @@ a:visited {
   transform: scale(0.95);
   background-color: #00ccaa;
 }
+
+.genre-buttons button.active {
+  background-color: #00ffc8;
+  color: #1e1e2f;
+  box-shadow: 0 0 10px #00ffc8;
+}
+
 .game-showcase {
   background-color: #000000;
   color: #ffffff;
