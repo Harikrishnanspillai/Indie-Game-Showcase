@@ -292,9 +292,12 @@ footer {
 }
 
 .game-card img {
-  width: 100%;
   height: 180px;
   object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
 }
 
 .game-card .card-content {
