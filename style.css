@@ -486,6 +486,7 @@ margin-bottom: 2rem;
   margin-top: 20px;
   color: #ff6666;
   text-decoration: none;
+  text-align: center;
   font-weight: bold;
   transition: color 0.3s ease;
 }
