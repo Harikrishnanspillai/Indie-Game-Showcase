@@ -22,15 +22,16 @@
 <section class="game-showcase">
   <h1>🎮 Game Library</h1>
   <div class="genre-buttons">
-    <button onclick="filterGames('all')">All</button>
-    <button onclick="filterGames('action')">Action</button>
-    <button onclick="filterGames('scifi')">Sci-Fi</button>
-    <button onclick="filterGames('puzzle')">Puzzle</button>
-    <button onclick="filterGames('strategy')">Strategy</button>
-    <button onclick="filterGames('racing')">Racing</button>
-    <button onclick="filterGames('card')">Card Battle</button>
-    <button onclick="filterGames('sports')">Sports</button>
-  </div>
+  <button class="filter-button active" onclick="filterGames('all')">All</button>
+  <button class="filter-button" onclick="filterGames('action')">Action</button>
+  <button class="filter-button" onclick="filterGames('scifi')">Sci-Fi</button>
+  <button class="filter-button" onclick="filterGames('puzzle')">Puzzle</button>
+  <button class="filter-button" onclick="filterGames('strategy')">Strategy</button>
+  <button class="filter-button" onclick="filterGames('racing')">Racing</button>
+  <button class="filter-button" onclick="filterGames('card')">Card Battle</button>
+  <button class="filter-button" onclick="filterGames('sports')">Sports</button>
+</div>
+
 
   <div class="game-grid" id="game-grid">
 <div class="game-card card">
@@ -178,29 +179,24 @@
       <p>Lead your army to domination.</p>
     </div>
 
-    <!-- Game 10 -->
      <div class="game-card racing">
       <a href="futuregrid-instructions.html"><img src="futuregrind.jpg" alt="futuregrind"></a>
       <h3>FUTURE GRID</h3>
       <p>Open-world chaos inspired by GTA.</p>
     </div>
    
-
-    <!-- Game 11 -->
     <div class="game-card puzzle">
       <a href="alternatewatch-instructions.html"><img src="aw.gif" alt="alternate-watch"></a>
       <h3>ALTERNATE WATCH</h3>
       <p>Balance and solve tile puzzles!</p>
     </div>
 
-    <!-- Game 12 -->
     <div class="game-card action">
       <a href="pacside-instructions.html"><img src="pacside.png" alt="Pac-Side"></a>
       <h3>PAC-SIDE</h3>
       <p>Defend your kingdom from dragons!</p>
     </div>
 
-    <!-- Game 13 -->
     <div class="game-card puzzle">
       <a href="goodjob-instructions.html"><img src="goodjob.png" alt="goodjob"></a>
       <h3>GOOD JOB!</h3>
@@ -208,14 +204,12 @@
       <a href="https://kathinkapng.itch.io/good-job" ></a>
     </div>
 
-    <!-- Game 14 -->
     <div class="game-card strategy">
       <a href="thehive-instructions.html"><img src="thehive.jpeg" alt="Ludo With Friends"></a>
       <h3>THE HIVE</h3>
       <p>Classic board fun online!</p>
     </div>
 
-    <!-- Game 15 -->
     <div class="game-card racing">
       <a href="photonhighway-instructions.html"><img src="photonhighway.jpeg" alt="Photon Highway"></a>
       <h3>PHOTON HIGHWAY</h3>
@@ -252,7 +246,6 @@
       <p>Card game fun with UNO vibes!</p>
       
     </div>
-
     
     <div class="game-card sports">
       <a href="skatebird-instructions.html"><img src="sb.gif" alt="skatebird"></a>
@@ -261,100 +254,79 @@
       
     </div>
 
-    
     <div class="game-card card">
       <a href="highstakes-instructions.html" ><img src="stakes.jpeg" alt="High stakes"></a>
       <h3>HIGH STAKES</h3>
-      <p>Run endlessly from danger!</p>
-      
+      <p>Run endlessly from danger!</p>      
     </div>
 
-    
     <div class="game-card action">
       <a href="projectlandsword-instructions.html"><img src="pl.gif" alt="projectlandsword"></a>
       <h3>PROJECT LANDSWORD</h3>
-      <p>Work together through puzzles!</p>
-      
+      <p>Work together through puzzles!</p>      
     </div>
-
     
     <div class="game-card puzzle">
       <a href="foundit-instructions.html"><img src="found.jpeg" alt="foundit"></a>
       <h3>FOUND IT</h3>
       <p>Slide tiles to reach 2048!</p>
-      
     </div>
-
     
     <div class="game-card scifi">
       <a href="fractalsailor-instructions.html"><img src="fractal.gif" alt="fractal-sailor"></a>
       <h3>FRACTAL SAILOR</h3>
       <p>Run and rotate in space tunnels!</p>
-      
     </div>
-
     
     <div class="game-card strategy">
       <a href="holderofplace-instructions.html"><img src="holderofplace.gif" alt="holder-of-place"></a>
       <h3>HOLDER OF PLACE</h3>
       <p>Control armies in a stickman world!</p>
-      
     </div>
 
-    
     <div class="game-card scifi">
       <a href="xenospore-instructions.html" ><img src="xenospore.gif" alt="xenospore"></a>
       <h3>XENOSPORE</h3>
-      <p>Control armies in a stickman world!</p>
-      
+      <p>Control armies in a stickman world!</p>      
     </div>
 
     <div class="game-card scifi">
       <a href="votv-instructions.html"><img src="votv.png" alt="VOTV"></a>
       <h3>VOICES OF THE VOID</h3>
       <p>Control armies in a stickman world!</p>
-      
     </div>
 
      <div class="game-card scifi">
       <a href="trigae-instructions.html"> <img src="tr.gif" alt="trigaea"></a>
       <h3>TRIGAEA</h3>
       <p>Control armies in a stickman world!</p>
-      
     </div>
 
      <div class="game-card sports">
       <a href="klifur-instructions.html"><img src="klifur.png" alt="klifur"></a>
       <h3>KLIFUR</h3>
       <p>Control armies in a stickman world!</p>
-      
-    </div>
+          </div>
 
      <div class="game-card sports">
       <a href="toasterball-instructions.html"><img src="tb.jpeg" alt="toasterball-demo"></a>
       <h3>TOASTERBALL</h3>
       <p>Control armies in a stickman world!</p>
-      
-    </div>
+          </div>
 
      <div class="game-card card">
       <a href="shogunshowdown-instructions.html"><img src="ss.gif" alt="shogunshowdown"></a>
       <h3>SHOGUN SHOWDOWN</h3>
       <p>Control armies in a stickman world!</p>
-      
-    </div>
+          </div>
 
      <div class="game-card card">
       <a href="waterworks-instructions.html"><img src="ww.png" alt="waterworks"></a>
       <h3>WATER WORKS</h3>
       <p>Control armies in a stickman world!</p>
-      
+          </div>
+
     </div>
-
-    
-
-    
-  </div>
 </section>
   <footer>
     <p>&copy; 2025 Indie Game Showcase</p>
@@ -366,6 +338,8 @@
       card.style.display = (genre === 'all' || card.classList.contains(genre)) ? 'block' : 'none';
     });
   }
+  const buttons = document.querySelectorAll('.filter-button');
+
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
       buttons.forEach(b => b.classList.remove('active')); 

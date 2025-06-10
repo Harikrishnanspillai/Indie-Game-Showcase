@@ -19,6 +19,9 @@ header {
   border-bottom: 2px solid #b8860b;
   position: relative;
   z-index: 10;
+  box-shadow: 0 6px 30px rgba(184, 134, 11, 0.8);
+
+
 }
 
 .logo {
