@@ -494,7 +494,7 @@ margin-bottom: 2rem;
   color: gold;
 }
 /* Contact Page Styles */
-#contact {
+#contact 
   max-width: 600px;
   margin: 4rem auto;
   padding: 2rem;
@@ -502,7 +502,6 @@ margin-bottom: 2rem;
   border: 1px solid #b8860b;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(184, 134, 11, 0.3);
-}
 
 #contact h2 {
   text-align: center;
