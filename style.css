@@ -20,8 +20,6 @@ header {
   position: relative;
   z-index: 10;
   box-shadow: 0 6px 30px rgba(184, 134, 11, 0.8);
-
-
 }
 
 .logo {
@@ -332,8 +330,6 @@ a:visited {
   color: #a20808; /* or your preferred color */
   text-decoration: none;
 }
-
-/* Genre Buttons Styling */
 .genre-buttons {
   text-align: center;
   margin: 20px 0;
@@ -497,7 +493,6 @@ margin-bottom: 2rem;
 .back-link:hover {
   color: gold;
 }
-/* Contact Page Styles */
 #contact {
   max-width: 600px;
   margin: 4rem auto;
