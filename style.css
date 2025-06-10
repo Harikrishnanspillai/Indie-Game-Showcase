@@ -551,12 +551,15 @@ margin-bottom: 2rem;
   border-radius: 30px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  box-shadow: 0 0 10px #b8860b;
+  font-family: 'Orbitron', sans-serif;
 }
 
 #contactForm button:hover {
   background-color: #daa520;
   color: #000;
+  box-shadow: 0 0 20px 4px #ffd700, 0 0 30px 6px #ffa500, 0 0 40px 8px #ff8c00;
 }
 
 @media (max-width: 768px) {
@@ -573,9 +576,7 @@ margin-bottom: 2rem;
   #contactForm textarea {
     font-size: 0.95rem;
   }
-
   #contactForm button {
     font-size: 0.95rem;
-    font-family: 'Orbitron', sans-serif;
   }
 }
