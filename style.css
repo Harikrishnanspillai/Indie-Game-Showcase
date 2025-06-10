@@ -112,6 +112,7 @@ footer {
   padding: 1rem;
   color: #888;
   border-top: 1px solid #b8860b;
+  box-shadow: 0 6px 30px rgba(184, 134, 11, 0.8);
 }
 
 /* Responsive */
