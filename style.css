@@ -590,3 +590,92 @@ margin-bottom: 2rem;
 span{
   color:gold;
 }
+.suggest-link {
+  font-family: 'Orbitron', sans-serif;
+  color: #facc15;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.suggest-link:hover {
+  color: #fffb00;
+  text-shadow: 0 0 8px #facc15;
+}
+#suggest {
+  background-color: #1a0000;
+  border: 1px solid #d4af37; 
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 650px;
+   margin: 5rem auto 3rem auto;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 0 10px #d4af37; 
+}
+
+#suggest h2 {
+  color: red;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#suggest label {
+  display: block;
+  color: #d4af37;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+#suggest input,
+#suggest select,
+#suggest textarea {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #111;
+  color: #f0f0f0;
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 0.4rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#suggest input::placeholder,
+#suggest textarea::placeholder {
+  color: #ccc;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#suggest button {
+  margin-top: 1.8rem;
+  background-color: #d4af37;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
+  font-family: 'Orbitron', sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px #d4af37; 
+}
+
+#suggest button:hover {
+  background-color: #e8c547;
+  box-shadow: 0 0 10px #e8c547;
+}
+
+.form-success {
+  margin-top: 1rem;
+  color: #22c55e;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+.backtosite:hover{
+  color:#d4af37; 
+}

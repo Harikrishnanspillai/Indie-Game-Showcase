@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indie Game Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="suggest" class="contact-box">
+  <h2 style="color: red;">Suggest a Game</h2>
+  <form id="suggestForm">
+    <label for="gameName">Game Name</label>
+    <input id="gameName" name="gameName" type="text" placeholder="Enter game name" required />
+
+    <label for="genre">Genre</label>
+    <select id="genre" name="genre" required>
+      <option value="">Select Genre</option>
+      <option value="Action">Action</option>
+      <option value="Puzzle">Puzzle</option>
+      <option value="Adventure">Sci-Fi</option>
+      <option value="Strategy">Strategy</option>
+      <option value="Card Battle">Card Battle</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="reason">Why do you recommend it?</label>
+    <textarea id="reason" name="reason" rows="4" placeholder="Tell us why..." required></textarea>
+
+    <button type="submit">Submit</button>
+    <p id="formMessage" class="form-success"></p>
+  </form>
+  <a class="backtosite" href="contact.html">Back to Site.!!</a>
+</section>
+
+<script>
+  document.getElementById("suggestForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const gameName = document.getElementById("gameName").value.trim();
+    const genre = document.getElementById("genre").value;
+    const reason = document.getElementById("reason").value.trim();
+
+    if (gameName === "" || genre === "" || reason === "") {
+      alert("Please fill in all the fields.");
+      return;
+    }
+
+    document.getElementById("formMessage").textContent =
+      "Thanks for your suggestion! We'll check it out.";
+    this.reset();
+  });
+</script>
+  </body>
+</html>
