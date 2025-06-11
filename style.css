@@ -593,13 +593,13 @@ span{
 
 #suggest {
   background-color: #1a0000;
-  border: 1px solid #d4af37; /* softer gold */
+  border: 1px solid #d4af37; 
   padding: 2rem;
   border-radius: 20px;
   max-width: 650px;
-  margin: 3rem auto;
+  margin: 5rem auto 3rem auto;
   font-family: 'Orbitron', sans-serif;
-  box-shadow: 0 0 10px #d4af37; /* softened glow */
+  box-shadow: 0 0 10px #d4af37;
 }
 
 #suggest h2 {
@@ -649,7 +649,20 @@ span{
   font-size: 1.1rem;
   font-family: 'Orbitron', sans-serif;
   transition: all 0.3s ease;
-  box-shadow: 0 0 5px #d4af37; /* reduced glow */
+  box-shadow: 0 0 5px #d4af37; 
+}
+.suggest-link {
+  font-family: 'Orbitron', sans-serif;
+  color: #facc15;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.suggest-link:hover {
+  color: #fffb00;
+  text-shadow: 0 0 8px #facc15;
 }
 
 #suggest button:hover {
@@ -664,41 +677,6 @@ span{
   text-align: center;
   font-family: 'Orbitron', sans-serif;
 }
-.backtolink:hover{
+.backtosite:hover{
   color: #d4af37
-}
-.trivia-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem 2rem;
-  margin-top: 2rem;
-}
-
-.trivia-card {
-  background-color: #1a0000;
-  border: 1px solid #b8860b;
-  border-radius: 12px;
-  padding: 1.2rem;
-  color: #f0e6d2;
-  transition: transform 0.3s, background-color 0.3s;
-  box-shadow: 0 4px 12px rgba(184, 134, 11, 0.4);
-  text-align: center;
-}
-
-.trivia-card:hover {
-  transform: scale(1.05);
-  background-color: #330000;
-}
-
-.trivia-card .emoji {
-  font-size: 2rem;
-  margin-bottom: 0.8rem;
-  display: block;
-}
-
-@media screen and (max-width: 768px) {
-  .trivia-card {
-    font-size: 0.95rem;
-  }
 }
