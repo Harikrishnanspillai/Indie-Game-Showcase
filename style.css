@@ -19,6 +19,7 @@ header {
   border-bottom: 2px solid #b8860b;
   position: relative;
   z-index: 10;
+  box-shadow: 0 6px 30px rgba(184, 134, 11, 0.8);
 }
 
 .logo {
@@ -111,6 +112,7 @@ footer {
   padding: 1rem;
   color: #888;
   border-top: 1px solid #b8860b;
+  box-shadow: 0 6px 30px rgba(184, 134, 11, 0.8);
 }
 
 /* Responsive */
@@ -329,8 +331,6 @@ a:visited {
   color: #a20808; /* or your preferred color */
   text-decoration: none;
 }
-
-/* Genre Buttons Styling */
 .genre-buttons {
   text-align: center;
   margin: 20px 0;
@@ -486,6 +486,7 @@ margin-bottom: 2rem;
   margin-top: 20px;
   color: #ff6666;
   text-decoration: none;
+  text-align: center;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -493,7 +494,6 @@ margin-bottom: 2rem;
 .back-link:hover {
   color: gold;
 }
-/* Contact Page Styles */
 #contact {
   max-width: 600px;
   margin: 4rem auto;

@@ -36,14 +36,12 @@
   <footer>
     <p>&copy; 2025 Indie Game Showcase. All rights reserved.</p>
   </footer>
-<audio id="pageLoadSound" src="supermario.mp3" preload="auto"></audio>
+<audio id="backgroundLoop" src="supermario.mp3" loop></audio>
 <script>
-  const sound = document.getElementById('pageLoadSound');
-  function playSoundOnce() {
-    sound.play();
-    window.removeEventListener('click', playSoundOnce);
-  }
-  window.addEventListener('click', playSoundOnce);
+  const bgAudio = document.getElementById('backgroundLoop');
+  document.addEventListener('click', () => {
+    bgAudio.play();
+  }, { once: true });
 </script>
 </body>
 </html>
