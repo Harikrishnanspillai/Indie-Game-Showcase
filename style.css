@@ -8,6 +8,9 @@ body {
   font-family: 'Orbitron', sans-serif;
   background-color: #0c0c0c;
   color: #f0e6d2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -105,7 +108,6 @@ nav a:hover {
   background-color: #daa520;
 }
 
-/* Footer */
 footer {
   background-color: #1a0000;
   text-align: center;
@@ -113,9 +115,14 @@ footer {
   color: #888;
   border-top: 1px solid #b8860b;
   box-shadow: 0 6px 30px rgba(184, 134, 11, 0.8);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.wrapper {
+  flex: 1;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.5rem;
@@ -134,7 +141,6 @@ footer {
   }
 }
 
-/* About Section */
 .about-section {
   max-width: 1000px;
   margin: 4rem auto;
@@ -246,7 +252,6 @@ footer {
   }
 }
 
-/* Indie Game Showcase Section */
 .showcase {
   padding: 4rem 2rem;
   background-color: #0c0c0c;
@@ -456,6 +461,7 @@ margin-bottom: 2rem;
   border-radius: 16px;
   text-align: center;
   color: #f0e6d2;
+  min-height: 500px;
   box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
 }
 
