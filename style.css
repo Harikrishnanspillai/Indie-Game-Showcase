@@ -42,7 +42,6 @@ nav a:hover {
   color: #b8860b;
 }
 
-/* Hero Section */
 .hero {
   position: relative;
   height: 100vh;
@@ -337,7 +336,7 @@ footer {
 }
 a:link,
 a:visited {
-  color: #a20808; /* or your preferred color */
+  color: #a20808; 
   text-decoration: none;
 }
 .genre-buttons {
