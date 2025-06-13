@@ -3,7 +3,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   
   const formData = new FormData(this);
 
-  fetch("https://ctrl-alt-play.42web.io/submit_contact.php", {
+  fetch("submit_contact.php", {
     method: "POST",
     body: formData
   })
@@ -11,7 +11,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   .then(data => {
     if (data === "Success") {
       document.getElementById("formMessage").textContent =
-        "Thanks for your suggestion! We'll check it out.";
+        "Thanks for reaching out! We'll get back to you soon.";
       this.reset();
     } else {
       alert("Failed to send message: " + data);
