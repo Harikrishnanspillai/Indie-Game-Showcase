@@ -11,7 +11,7 @@
 
 }
 
-/* Trivia Card Layout */
+
 .trivia-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -42,7 +42,7 @@
   display: block;
 }
 
-/* Responsive text sizing */
+
 @media screen and (max-width: 768px) {
   .trivia-card {
     font-size: 0.95rem;
