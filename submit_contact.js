@@ -3,7 +3,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   
   const formData = new FormData(this);
 
-  fetch("submit_contact.php", {
+  fetch("https://ctrl-alt-play.42web.io/submit_contact.php", {
     method: "POST",
     body: formData
   })
