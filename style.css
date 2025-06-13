@@ -42,7 +42,6 @@ nav a:hover {
   color: #b8860b;
 }
 
-/* Hero Section */
 .hero {
   position: relative;
   height: 100vh;
@@ -304,6 +303,8 @@ footer {
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0; 
+  animation: fadeUp 0.8s ease forwards;
 }
 
 .game-card:hover {
@@ -337,7 +338,7 @@ footer {
 }
 a:link,
 a:visited {
-  color: #a20808; /* or your preferred color */
+  color: #a20808; 
   text-decoration: none;
 }
 .genre-buttons {
@@ -683,4 +684,44 @@ span{
 }
 .backtosite:hover{
   color: #d4af37
+}
+
+.about-section,
+.showcase,
+.events-section,
+#contact,
+#suggest {
+  animation: fadeIn 1s ease forwards;
+}
+
+.game-card,
+.event-box,
+.team-member {
+  animation: slideUp 0.8s ease forwards;
+}
+
+.genre-buttons button:hover {
+  animation: pulse 0.6s ease;
+}
+
+.cta-button {
+  animation: glowPulse 2s infinite ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 10px #b8860b, 0 0 20px #ff0000; }
+  50% { box-shadow: 0 0 20px #ffd700, 0 0 30px #ff4500; }
+  100% { box-shadow: 0 0 10px #b8860b, 0 0 20px #ff0000; }
 }
