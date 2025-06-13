@@ -3,7 +3,7 @@ document.getElementById("suggestForm").addEventListener("submit", function (e) {
 
   const formData = new FormData(this);
 
-  fetch("https://YOUR_BACKEND_HOST/submit_suggestion.php", {
+  fetch("https://ctrl-alt-play.42web.io/submit_suggestion.php", {
     method: "POST",
     body: formData
   })
