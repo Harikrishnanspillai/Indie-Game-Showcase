@@ -20,7 +20,7 @@
       <option value="">Select Genre</option>
       <option value="Action">Action</option>
       <option value="Puzzle">Puzzle</option>
-      <option value="Adventure">Sci-Fi</option>
+      <option value="Sci-Fi">Sci-Fi</option>
       <option value="Strategy">Strategy</option>
       <option value="Card Battle">Card Battle</option>
       <option value="Other">Other</option>
@@ -34,24 +34,6 @@
   </form>
   <a class="backtosite" href="contact.html">Back to Site.!!</a>
 </section>
-
-<script>
-  document.getElementById("suggestForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const gameName = document.getElementById("gameName").value.trim();
-    const genre = document.getElementById("genre").value;
-    const reason = document.getElementById("reason").value.trim();
-
-    if (gameName === "" || genre === "" || reason === "") {
-      alert("Please fill in all the fields.");
-      return;
-    }
-
-    document.getElementById("formMessage").textContent =
-      "Thanks for your suggestion! We'll check it out.";
-    this.reset();
-  });
-</script>
-  </body>
+<script src="submit_suggestions.js"></script>
+</body>
 </html>
