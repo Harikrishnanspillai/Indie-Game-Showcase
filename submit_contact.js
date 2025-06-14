@@ -1,4 +1,4 @@
-document.getElementById("suggestForm").addEventListener("submit", function (e) {
+document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
   const form = this;
@@ -6,7 +6,7 @@ document.getElementById("suggestForm").addEventListener("submit", function (e) {
 
   // Immediately show success message
   document.getElementById("formMessage").textContent =
-    "Thanks for your suggestion! We'll check it out.";
+    "Thanks for your feedback! We'll reach back to you soon.";
 
   // Reset the form
   form.reset();
