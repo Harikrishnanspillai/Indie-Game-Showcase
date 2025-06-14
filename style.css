@@ -118,9 +118,6 @@ footer {
   bottom: 0;
   width: 100%;
 }
-.wrapper {
-  flex: 1;
-}
 
 @media screen and (max-width: 768px) {
   .hero-content h1 {
