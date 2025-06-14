@@ -39,7 +39,8 @@ We chose the **Gaming and Innovation** theme with a focus on **Indie Games**. Th
 | **Events & Updates** | Displays ongoing/upcoming indie game events. Each title is clickable and opens a dedicated page with event descriptions, dates, and details to keep users informed and engaged. |
 | **Contact Page**     | Contains a simple and responsive contact form (name, email, message) for general inquiries or collaboration proposals. |
 | **Suggest a Game**   | Lets users recommend new games to feature on the site. Includes dropdown for genre, reason for suggestion, and JavaScript validation for all fields. Shows confirmation upon successful submission. |
-| **Instruction Pages**| Each of the 50+ games has its own dedicated instruction page. These explain how to play the game and link to the original browser version. Pages follow a clean, consistent template. |
+| **Instruction Pages**| Each of the 50+ games has its own dedicated instruction page. These explain how to play the game and link to the original browser version. Pages follow a clean, consistent template. |                                                                                                                    
+| **Indie Insights** | Shares a curated list of fun, surprising trivia and facts about famous indie games and developers. Designed as bite-sized, easy-to-read cards with a subtle JavaScript animation that reveals each fact with a smooth slide-up effect as users scroll. Enhances user engagement with interactive and educational content. |
 
 ---
 
